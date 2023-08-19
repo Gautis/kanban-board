@@ -1,22 +1,43 @@
 /* Ticket.css */
 
+/* Basic ticket styles */
 .ticket {
-    border: 1px solid #ccc;
-    padding: 10px;
-    margin: 10px;
-  }
-  
-  .ticket-title {
-    font-weight: bold;
-  }
-  
-  .ticket.priority-1 {
-    background-color: white;
-  }
-  
-  .ticket.priority-2 {
-    background-color: white;
-  }
-  
-  /* Define styles for other priorities */
-  
+  border: 1px solid #ccc;
+  padding: 10px;
+  margin: 10px;
+  border-radius: 10px;
+  transition: background-color 0.3s, transform 0.3s;
+}
+
+.ticket-title {
+  font-weight: bold;
+}
+
+/* Priority-specific styles */
+.ticket.priority-1 {
+  background-color: #ffcccc; /* Light red for priority 1 */
+  border-color: #f0f0f0;
+}
+
+.ticket.priority-2 {
+  background-color: #ffdb4d; /* Yellow for priority 2 */
+  border-color: #e6cc00;
+}
+
+/* Define styles for other priorities */
+.ticket.priority-3 {
+  background-color: #f0f0f0; /* Light green for priority 3 */
+  border-color: #f0f0f0;
+}
+
+.ticket.priority-4 {
+  background-color: #f0f0f0; /* Light blue for priority 4 */
+  border-color: #f0f0f0;
+}
+
+/* Hover effect */
+.ticket:hover {
+  background-color: #f0f0f0; /* Light gray on hover */
+  transform: scale(1.02); /* Slight zoom on hover */
+  cursor: pointer;
+}
