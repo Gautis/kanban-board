@@ -1,0 +1,22 @@
+/* Ticket.css */
+
+.ticket {
+    border: 1px solid #ccc;
+    padding: 10px;
+    margin: 10px;
+  }
+  
+  .ticket-title {
+    font-weight: bold;
+  }
+  
+  .ticket.priority-1 {
+    background-color: white;
+  }
+  
+  .ticket.priority-2 {
+    background-color: white;
+  }
+  
+  /* Define styles for other priorities */
+  

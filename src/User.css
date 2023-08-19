@@ -1,0 +1,17 @@
+/* User.css */
+
+.user {
+    border: 1px solid #ccc;
+    padding: 10px;
+    margin: 10px;
+    font-weight: bold;
+  }
+  
+  .user.available {
+    background-color:green; /* Green for available users */
+  }
+  
+  .user.unavailable {
+    background-color: #ff0000; /* Red for unavailable users */
+  }
+  

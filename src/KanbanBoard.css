@@ -1,0 +1,143 @@
+/* Assuming you have a CSS file named KanbanBoard.css */
+
+.kanban-board {
+    display: flex;
+    flex-direction: column;
+    align-items: left;
+  }
+  
+  .options {
+    position: relative;
+    display: flex;
+    right: 625px;
+    align-items: left;
+    justify-content: left;
+    width: 100%;
+    margin-bottom: 20px;
+  }
+  
+  .select-box {
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+  }
+  
+  .display-dropdown-container {
+    position: relative;
+    display: inline-block;
+  }
+  
+  .display-dropdown {
+    font-weight: bold;
+    background: transparent;
+    border: none;
+    color: #333;
+    cursor: pointer;
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+  }
+  
+  .dropdowns {
+    position: absolute;
+    top: 100%;
+    left: 0;
+    background: #fff;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    padding: 10px;
+    z-index: 1;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+  }
+  
+  .grouping-dropdown,
+  .ordering-dropdown {
+    color:grey;
+    display: flex;
+    align-items: center;
+  }
+  
+  .grouping-dropdown label,
+  .ordering-dropdown label {
+    font-weight: bold;
+    margin-right: 10px;
+  }
+  
+  .grouping-dropdown select,
+  .ordering-dropdown select {
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+  }
+  
+  .kanban-columns {
+    display: flex;
+    padding: -20px;
+    gap: 200px;
+  }
+  
+  .column {
+    flex: 1;
+    background-color: #f4f4f4;
+    border-radius: 5px;
+    padding: 20px;
+    box-shadow: 0px 3px 6px rgba(0, 0, 0, 0.1);
+  }
+  
+  .column h2 {
+    font-size: 1.2rem;
+    margin-bottom: 10px;
+    color: #333;
+  }
+  
+  .ticket {
+    background-color: #fff;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    padding: 10px;
+    margin-bottom: 10px;
+    transition: background-color 0.3s, transform 0.3s;
+  }
+  
+  .ticket:hover {
+    background-color: #f0f0f0;
+    transform: scale(1.02);
+  }
+  
+  .ticket-title {
+    font-size: 1rem;
+    font-weight: bold;
+    margin-bottom: 5px;
+  }
+  
+  .ticket-info {
+    font-size: 0.9rem;
+    color: #666;
+  }
+  
+  .user-info {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    margin-top: 5px;
+  }
+  
+  .user-avatar {
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    object-fit: cover;
+  }
+  
+  .user-name {
+    font-size: 0.9rem;
+  }
+  
+  /* Additional styles for selected options */
+  .select-box option {
+    background-color: #fff;
+    color: #333;
+  }
+  
